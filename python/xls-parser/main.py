@@ -2,10 +2,10 @@ import sys
 import os
 import pandas as pd
 import datetime as dt
-from enum import Enum
+from enum import IntEnum
 
 
-class Days(Enum):
+class Days(IntEnum):
     Monday = 0
     Tuesday = 1
     Wednesday = 2
@@ -25,6 +25,7 @@ def main(file_path: str):
 
     result = df_str.values.tolist()
     now = dt.datetime.now()
+    print(Days.Wednesday)
     print(now.weekday())
     print(now)
     for i, row in enumerate(result):
