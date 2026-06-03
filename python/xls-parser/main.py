@@ -14,6 +14,8 @@ class Days(IntEnum):
     Saturday = 5
     Sunday = 6
 
+class Message():
+    def __init__()
 
 def main(file_path: str):
     if not os.path.exists(file_path):
